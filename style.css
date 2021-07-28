@@ -1,0 +1,66 @@
+
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header div.author{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    line-height: 35px;
+    border: rgb(183 173 173) solid 3px;
+    border-style: outset;
+    width: 230px;
+    height: 35px;
+    position: absolute;
+    margin: 40px 0px 0px -50px;
+    transform: rotate(-40deg);
+}
+
+article.display{
+    width: 100vw;
+    height: 100px;
+    background-color: rgb(40, 40, 78);
+    color: lightblue;
+    text-align: right;
+    line-height: 100px;
+    font-size: 40px;
+}
+
+article.display#expression{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.display span#expression{
+    margin-right: 10px;
+}
+
+article.buttons{
+    display: grid;
+    grid-template-areas:
+    '. . . .';
+}
+
+article.buttons button{
+    height: calc((100vh - 102px) / 5);
+    width: calc(100vw / 4);
+    font-size: 30px;
+    padding: 0;
+}
+
+button#plus{
+    grid-row: 2 / 4;
+    grid-column: 4;
+    height: auto;
+}
+
+button#equals{
+    grid-row: 4 / 6;
+    grid-column: 4;
+    height: auto;
+}

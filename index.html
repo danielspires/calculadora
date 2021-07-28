@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="author">
+                DANIEL PIRES
+            </div>
+        </header>
+        <main>
+            <article class="display">
+                <span id="expression"></span>
+            </article>
+            <article class="buttons">
+                <button value="AC" onclick="verifyClick(this.value)">AC</button>
+                <button value="/" onclick="verifyClick(this.value)">/</button>
+                <button value="x" onclick="verifyClick(this.value)">x</button>
+                <button value="-" onclick="verifyClick(this.value)">-</button>
+                <button value="1" onclick="verifyClick(this.value)">1</button>
+                <button value="2" onclick="verifyClick(this.value)">2</button>
+                <button value="3" onclick="verifyClick(this.value)">3</button>
+                <button value="+" id="plus" onclick="verifyClick(this.value)">+</button>
+                <button value="4" onclick="verifyClick(this.value)">4</button>
+                <button value="5" onclick="verifyClick(this.value)">5</button>
+                <button value="6" onclick="verifyClick(this.value)">6</button>
+                <button value="=" id="equals" onclick="verifyClick(this.value)">=</button>
+                <button value="7" onclick="verifyClick(this.value)">7</button>
+                <button value="8" onclick="verifyClick(this.value)">8</button>
+                <button value="9" onclick="verifyClick(this.value)">9</button>
+                <button value="0" onclick="verifyClick(this.value)">0</button>
+                <button value="." onclick="verifyClick(this.value)">.</button>
+                <button value="" onclick="verifyClick(this.value)"></button>
+            </article>
+        </main>
+    </body>
+</html>
